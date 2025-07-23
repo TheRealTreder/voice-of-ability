@@ -2,59 +2,51 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Heart, MessageCircle, Share2, Clock } from "lucide-react";
-
-const stories = [
-  {
-    id: 1,
-    author: "Sarah M.",
-    title: "Finding Independence After My Accident",
-    excerpt: "Three years ago, my world changed completely. But today, I want to share how I discovered strength I never knew I had and the amazing community that helped me rebuild...",
-    category: "Inspiration",
-    readTime: "5 min read",
-    likes: 124,
-    comments: 18,
-    avatar: "SM"
-  },
-  {
-    id: 2,
-    author: "Marcus L.",
-    title: "Navigating College with Visual Impairment",
-    excerpt: "Starting university was scary enough, but doing it with a visual impairment brought unique challenges. Here's what I learned about advocacy, technology, and finding your voice...",
-    category: "Education",
-    readTime: "7 min read",
-    likes: 89,
-    comments: 12,
-    avatar: "ML"
-  },
-  {
-    id: 3,
-    author: "Dr. Jennifer K.",
-    title: "Supporting Mental Health in Disability Communities",
-    excerpt: "As both a therapist and someone with a disability, I've seen how crucial mental health support is. Let me share some strategies that have helped my patients and myself...",
-    category: "Professional Insight",
-    readTime: "4 min read",
-    likes: 156,
-    comments: 23,
-    avatar: "JK"
-  }
-];
-
+const stories = [{
+  id: 1,
+  author: "Sarah M.",
+  title: "Finding Independence After My Accident",
+  excerpt: "Three years ago, my world changed completely. But today, I want to share how I discovered strength I never knew I had and the amazing community that helped me rebuild...",
+  category: "Inspiration",
+  readTime: "5 min read",
+  likes: 124,
+  comments: 18,
+  avatar: "SM"
+}, {
+  id: 2,
+  author: "Marcus L.",
+  title: "Navigating College with Visual Impairment",
+  excerpt: "Starting university was scary enough, but doing it with a visual impairment brought unique challenges. Here's what I learned about advocacy, technology, and finding your voice...",
+  category: "Education",
+  readTime: "7 min read",
+  likes: 89,
+  comments: 12,
+  avatar: "ML"
+}, {
+  id: 3,
+  author: "Dr. Jennifer K.",
+  title: "Supporting Mental Health in Disability Communities",
+  excerpt: "As both a therapist and someone with a disability, I've seen how crucial mental health support is. Let me share some strategies that have helped my patients and myself...",
+  category: "Professional Insight",
+  readTime: "4 min read",
+  likes: 156,
+  comments: 23,
+  avatar: "JK"
+}];
 const StoriesSection = () => {
-  return (
-    <section id="stories" className="py-20 bg-background">
+  return <section id="stories" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             Community Stories
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Real experiences, genuine connections, and inspiring journeys from our community members.
-          </p>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Your experiences matter. Connect with others who understand your challenges, celebrate your victories, and find strength in shared stories.
+
+        </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {stories.map((story) => (
-            <Card key={story.id} className="h-full hover:shadow-warm transition-all duration-300 bg-card border-border group">
+          {stories.map(story => <Card key={story.id} className="h-full hover:shadow-warm transition-all duration-300 bg-card border-border group">
               <CardHeader className="pb-4">
                 <div className="flex items-center space-x-3 mb-3">
                   <Avatar className="h-10 w-10">
@@ -102,8 +94,7 @@ const StoriesSection = () => {
                   </Button>
                 </div>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
         
         <div className="text-center mt-12">
@@ -112,8 +103,6 @@ const StoriesSection = () => {
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default StoriesSection;

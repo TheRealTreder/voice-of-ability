@@ -1,8 +1,6 @@
 import { Heart, Shield, Users, Mail, Phone } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-card border-t border-border pt-16 pb-8">
+  return <footer className="bg-card border-t border-border pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
@@ -28,7 +26,7 @@ const Footer = () => {
               <li><a href="#" className="hover:text-primary transition-colors">Share Your Story</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Browse Stories</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Support Groups</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Community Guidelines</a></li>
+              
             </ul>
           </div>
           
@@ -39,7 +37,7 @@ const Footer = () => {
               <li><a href="#" className="hover:text-primary transition-colors">Find a Therapist</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Healthcare Professionals</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Crisis Resources</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Emergency Support</a></li>
+              
             </ul>
           </div>
           
@@ -47,16 +45,13 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-foreground mb-4">Get Help</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li className="flex items-center space-x-2">
-                <Phone className="h-4 w-4" />
-                <span>Crisis Hotline: 988</span>
-              </li>
+              
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
                 <span>support@hopebridge.com</span>
               </li>
               <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Terms of Service</a></li>
+              
             </ul>
           </div>
         </div>
@@ -81,8 +76,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
