@@ -40,33 +40,7 @@ const Hero = () => {
           </div>
           
           {/* Feature Cards */}
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <Card className="p-6 bg-card/80 backdrop-blur-sm border-border shadow-gentle hover:shadow-warm transition-all duration-300">
-              <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full mb-4 mx-auto">
-                <MessageCircle className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">Share & Express</h3>
-              <p className="text-muted-foreground">Share your experiences with others who went through similar situations.</p>
-            </Card>
-            
-            <Card className="p-6 bg-card/80 backdrop-blur-sm border-border shadow-gentle hover:shadow-warm transition-all duration-300">
-              <div className="flex items-center justify-center w-12 h-12 bg-warm-orange/10 rounded-full mb-4 mx-auto">
-                <Users className="h-6 w-6 text-warm-orange" />
-              </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">Find Community</h3>
-              <p className="text-muted-foreground">
-                Connect with others who share similar experiences and learn from their journeys.
-              </p>
-            </Card>
-            
-            <Card className="p-6 bg-card/80 backdrop-blur-sm border-border shadow-gentle hover:shadow-warm transition-all duration-300">
-              <div className="flex items-center justify-center w-12 h-12 bg-gentle-green/10 rounded-full mb-4 mx-auto">
-                <Heart className="h-6 w-6 text-gentle-green" />
-              </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">Professional Support</h3>
-              <p className="text-muted-foreground">Sign up with a doctor for medical help.</p>
-            </Card>
-          </div>
+          
         </div>
       </div>
     </section>;
